@@ -1,6 +1,6 @@
 # Aditya-L1 Solar Flare Nowcasting Engine
 
-### 🏆 Developed for the Aditya-L1 Hackathon 2025
+### BETA_NOWCASTER
 An automated, real-time data processing pipeline that ingests Level-1 telemetry from India's first dedicated solar mission (**Aditya-L1**) to detect solar flares and catalog cross-payload event dynamics in real time.
 
 ---
@@ -12,7 +12,7 @@ An automated, real-time data processing pipeline that ingests Level-1 telemetry 
 
 ---
 
-## 🌌 Overview & Scientific Motivation
+##  Overview & Scientific Motivation
 
 Solar flares release up to $10^{32}\text{ ergs}$ of energy in minutes, posing immediate risks to satellite electronics, telecommunication networks, and power grids on Earth. 
 
@@ -29,33 +29,8 @@ Because SXR emissions track the cumulative thermal response of plasma heated by 
 
 ---
 
-## 🛠️ Core Engine Architecture
+##  Core Engine Architecture
 
-  [ Aditya-L1 Level-1 Telemetry ]
-                           |             
-             +------------ +-------------+
-             | (gzip FITS)               | (Plain FITS)
-             v                           v
-      [ SoLEXS Stream ]           [ HEL1OS Stream ]
-             |                           |
-             v                           v
-   ┌───────────────────┐       ┌───────────────────┐
-   │    Algorithm A    │       │    Algorithm A    │
-   │ Dynamic Rolling   │       │ Dynamic Rolling   │
-   │  Sigma Anomaly    │       │  Sigma Anomaly    │
-   └─────────┬─────────┘       └─────────┬─────────┘
-             |                           |
-    (SoLEXS Event List)         (HEL1OS Event List)
-             |                           |
-             +-------------+-------------+
-                           |
-                           v
-                 ┌───────────────────┐
-                 │    Algorithm B    │
-                 │   Cross-Payload   │
-                 │    Coincidence    │
-                 │    Cataloger      │
-                 └─────────┬─────────┘
-                           |
-                           v
-           [ Unified Flare Event Catalogue ]
+<img width="1600" height="872" alt="image" src="https://github.com/user-attachments/assets/fd8dd609-2e9c-4b59-8e07-9afc6e448fd7" />
+
+
