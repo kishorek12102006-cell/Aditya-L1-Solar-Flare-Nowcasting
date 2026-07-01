@@ -1,4 +1,4 @@
-# 🛰️ Aditya-L1 Solar Flare Nowcasting Engine
+# Aditya-L1 Solar Flare Nowcasting Engine
 
 [![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/platform-ISRO%20PRADAN-orange.svg)](https://www.isro.gov.in/)
@@ -8,7 +8,7 @@ A real-time telemetry processing framework for space-based solar weather trackin
 
 ---
 
-## 📊 Live Visualization Output
+## Live Visualization Output
 
 The real-time visualization engine splits data into high-contrast dual streams optimized for dark-room mission operations control (MOC) environments:
 
